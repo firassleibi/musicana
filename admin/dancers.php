@@ -1,0 +1,163 @@
+<?php
+	session_start();
+	if(@$_SESSION["logged"]!=1)
+		header("location: login.php");
+?>
+<!doctype html>
+<html lang="en" dir="rtl">
+<? include("include/head.php") ?>
+
+<?php
+	if(isset($_GET['type'])&& isset($_GET['id'])){
+		$type=$_GET['type'];
+		$id=$_GET['id'];
+		if($type=="approve"){
+			mysqli_query($con,"update projects set home=1 where id=$id");
+		}
+		else if($type=="disapprove"){
+			mysqli_query($con,"update projects set home=0 where id=$id");
+		}
+		else if($type=="delete"){
+			mysqli_query($con,"delete from singer where id=$id");	
+			mysqli_query($con,"delete from message where rid=$id and (rtype=2 or rtype=4)");	
+			mysqli_query($con,"delete from requests where singer_id=$id");	
+			mysqli_query($con,"delete from month where singer_id=$id");			
+		}
+	}
+	$query=mysqli_query($con,"select * from singer where type='3'");
+	while($row=mysqli_fetch_assoc($query)){
+		$l[]=$row;
+	}
+	$json=json_encode($l);
+	file_put_contents("json/singer.json",$json);
+	
+?>
+<body> 
+
+<div class="wrapper">
+	
+    <? include("include/sidebar.php") ?> 
+    <div class="main-panel">
+        
+         <? include("include/navbar.php") ?>            
+                     
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">عرض الراقصات</h4>
+                            </div>
+                            <div class="content">
+                                <table id="table" class="table table-striped table-bordered table-hover" data-toggle="table" data-url="json/singer.json"  data-cache="false" data-pagination="true" data-search="true">
+							<thead>
+                            
+							<tr>             
+                            	
+								<th data-align="center" data-valign="middle" data-field="name" data-sortable="true">
+									 الاسم
+								</th>
+								<th data-align="center" data-valign="middle" data-field="price">
+									 السعر
+								</th>
+                                <th data-align="center" data-valign="middle" data-field="image" data-formatter="imageOperator">
+									 الصورة
+								</th>                  
+                                <th data-align="center" data-valign="middle" data-field="id" data-formatter="deleteOperator" data-events="operateEvents">
+									 
+								</th>
+
+							</tr>
+							</thead>
+							</table>
+                            </div>
+                        </div>
+                    </div>
+                   
+               
+                </div>                    
+            </div>
+        </div>
+        
+        <? include("include/footer.php") ?> 
+        
+        
+        
+    </div>  
+    
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+	
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+    
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+	
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+    <script src="bootstraptable/bootstrap-table.js"></script>
+    <script>
+		function imageOperator(value, row, index) {
+		return "<img width='100' style='border-radius:10px' height='100' src='img/uploads/"+value+"'/>";
+	}
+		function approvedOperator(value, row, index) {
+		if(value==0)
+			return "<a class='approve' href='javascript:void(0)' title='تفعيل'><i class='fa fa-close text text-danger' ></i></a>";
+		else
+			return "<a class='disapprove' href='javascript:void(0)' title='إيقاف تفعيل'><i class='fa fa-check text text-success' </i></a>";
+	}
+		function deleteOperator(value, row, index) {
+			return "<a class='delete' href='javascript:void(0)' title='حذف'><i class='fa fa-trash' ></i></a>&nbsp;&nbsp;<a class='ban' href='javascript:void(0)' title='تعديل'><i class='fa fa-edit' ></i></a>&nbsp;&nbsp;<a class='videos' href='javascript:void(0)' title='قائمة الفيديو'><i class='fa fa-youtube' ></i></a>&nbsp;&nbsp;<a class='image' href='javascript:void(0)' title='قائمة الصور'><i class='fa fa-image' ></i></a>&nbsp;&nbsp;<a class='schedule' href='javascript:void(0)' title='الحجوزات'><i class='fa fa-table' ></i></a>&nbsp;&nbsp;<a class='message' href='javascript:void(0)' title='إرسال رسالة'><i class='fa fa-envelope' ></i></a>";
+	}
+		window.operateEvents = {
+        'click .approve': function (e, value, row, index) {
+            window.location="?id="+row['id']+"&type=approve";
+        },
+        'click .disapprove': function (e, value, row, index) {
+				window.location="?id="+row['id']+"&type=disapprove";
+        },
+        'click .delete': function (e, value, row, index) {
+            c=confirm('تأكيد الحذف؟');
+			if(c==true){
+				window.location="?id="+row['id']+"&type=delete";
+			}
+        },
+		'click .ban': function (e, value, row, index) {
+				window.location="update_singer.php?id="+row['id'];
+        }
+		,
+		'click .image': function (e, value, row, index) {
+				window.location="images.php?sid="+row['id'];
+        }
+		,
+		'click .videos': function (e, value, row, index) {
+				window.location="videos.php?sid="+row['id'];
+        }
+		,
+		'click .schedule': function (e, value, row, index) {
+				window.location="schedule.php?sid="+row['id'];
+        },
+		'click .message': function (e, value, row, index) {
+				window.location="message.php?rid="+row['id']+"&rtype=2";
+        }
+    };
+	</script>
+    
+</html>

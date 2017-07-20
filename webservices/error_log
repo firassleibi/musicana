@@ -1,0 +1,35 @@
+[16-Apr-2016 00:58:09 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana-uae.com/webservices/getNotify.php on line 6
+[16-Apr-2016 01:06:16 Asia/Dubai] PHP Warning:  Illegal string offset 'message' in /home/firawxed/public_html/musicana-uae.com/webservices/getNotify.php on line 16
+[15-Apr-2016 17:08:33 America/New_York] PHP Fatal error:  Cannot use [] for reading in /home/firawxed/public_html/musicana-uae.com/webservices/getNotify.php on line 16
+[16-Apr-2016 01:09:21 Asia/Dubai] PHP Warning:  Illegal string offset 'message' in /home/firawxed/public_html/musicana-uae.com/webservices/getNotify.php on line 16
+[16-Apr-2016 01:09:21 Asia/Dubai] PHP Warning:  Illegal string offset 'message' in /home/firawxed/public_html/musicana-uae.com/webservices/getNotify.php on line 16
+[21-Apr-2016 02:26:41 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/homeloader.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/homeloader.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[21-Apr-2016 02:26:43 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/homeloader.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/homeloader.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Apr-2016 10:23:28 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:33 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:38 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:43 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:48 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:53 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:23:58 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:03 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:08 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:13 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:24 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:29 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:34 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:39 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:44 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:49 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:54 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:24:59 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:25:04 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[23-Apr-2016 10:25:09 America/New_York] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/firawxed/public_html/musicana.ae/webservices/getNotifyMessage.php on line 8
+[04-May-2016 16:25:52 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/firawxed/public_html/musicana.ae/webservices/getTotalInboxNotifications.php on line 9
+[04-May-2016 16:29:17 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/getAllNotifications.php on line 11
+[04-May-2016 16:31:40 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/getAllNotifications.php on line 11
+[04-May-2016 16:32:06 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/getAllNotifications.php on line 19
+[04-May-2016 16:33:11 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/getAllNotifications.php on line 11
+[04-May-2016 16:33:56 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/getAllNotifications.php on line 11
+[04-Sep-2016 01:36:17 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/signin.php on line 12
+[06-Nov-2016 11:39:55 Asia/Dubai] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/webservices/signin.php on line 12

@@ -1,0 +1,10 @@
+[15-Apr-2016 21:19:09 Asia/Dubai] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana-uae.com/admin/include/accept_request.php on line 5
+[15-Apr-2016 21:19:09 Asia/Dubai] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana-uae.com/admin/include/accept_request.php on line 9
+[15-Apr-2016 21:19:09 Asia/Dubai] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana-uae.com/admin/include/accept_request.php on line 11
+[15-Apr-2016 21:19:09 Asia/Dubai] PHP Fatal error:  Call to a member function format() on a non-object in /home/firawxed/public_html/musicana-uae.com/admin/include/accept_request.php on line 25
+[20-Apr-2016 23:19:56 Asia/Dubai] PHP Fatal error:  Cannot use object of type stdClass as array in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 7
+[20-Apr-2016 23:21:15 Asia/Dubai] PHP Fatal error:  Cannot use object of type stdClass as array in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 7
+[03-May-2016 19:10:36 Asia/Dubai] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 6
+[03-May-2016 19:10:36 Asia/Dubai] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 14
+[25-Dec-2016 04:09:13 Asia/Dubai] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 6
+[25-Dec-2016 04:09:13 Asia/Dubai] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/firawxed/public_html/musicana.ae/admin/include/accept_request.php on line 15
